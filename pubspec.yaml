@@ -38,7 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   #google sign in
-  firebase_auth: ^4.7.0
+  firebase_auth: ^4.7.1
   google_sign_in: ^6.1.4
 
   #google icon 
@@ -75,6 +75,11 @@ flutter:
   assets:
     - assets/gmail.png
     - assets/phone.png
+    - assets/find_date.png
+    - assets/host_date.png
+    - assets/message.png
+    - assets/profile.png
+    - assets/suggestion.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
