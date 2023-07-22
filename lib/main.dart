@@ -1,5 +1,3 @@
-import 'package:brew/page/auth_page.dart';
-import 'package:brew/page/home_page.dart';
 import 'package:brew/provider/google_sign_in.dart';
 import 'package:brew/widgets/sign_up_widget.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -19,9 +17,7 @@ class FigmaToCodeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
-      ),
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       home: Scaffold(
         body: ListView(children: const [
           SignInPage(),

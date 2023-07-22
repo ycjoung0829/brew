@@ -80,6 +80,7 @@ flutter:
     - assets/message.png
     - assets/profile.png
     - assets/suggestion.png
+    - assets/find_date_clicked.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -2,22 +2,21 @@ import 'package:brew/services/firebase_services.dart';
 import 'package:brew/widgets/sign_up_widget.dart';
 import 'package:flutter/material.dart';
 
-class MainPage extends StatefulWidget {
-  const MainPage({super.key});
+class ProfilePage extends StatefulWidget {
+  const ProfilePage({super.key});
 
   @override
-  State<MainPage> createState() => _MainPageState();
+  State<ProfilePage> createState() => _ProfilePageState();
 }
 
-class _MainPageState extends State<MainPage> {
+class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Material(
-        color: Colors.white,
-        //type: MaterialType.transparency,
+        type: MaterialType.transparency,
         child: Column(
           children: [
             Column(
@@ -27,7 +26,7 @@ class _MainPageState extends State<MainPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      '📍: seoul, south korea',
+                      'profile page',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.black,
