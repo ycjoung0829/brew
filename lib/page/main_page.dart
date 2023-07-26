@@ -22,12 +22,42 @@ class _MainPageState extends State<MainPage> {
           children: [
             Column(
               children: [
-                SizedBox(height: height * 0.04),
+                SizedBox(height: height * 0.07),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  height: height * 0.05,
+                  width: width * 0.7,
+                  child: const Text(
+                    "TIME TO FIND",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 30,
+                      fontFamily: 'Inter',
+                      fontWeight: FontWeight.w100,
+                    ),
+                  ),
+                ),
+                Container(
+                  alignment: Alignment.centerRight,
+                  height: height * 0.08,
+                  width: width * 0.7,
+                  child: const Text(
+                    "A DATE",
+                    style: TextStyle(
+                      color: Color(0xFF6C584C),
+                      fontSize: 50,
+                      fontStyle: FontStyle.italic,
+                      fontFamily: 'Inter',
+                      fontWeight: FontWeight.w200,
+                    ),
+                  ),
+                ),
+                SizedBox(height: height * 0.05),
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      '📍: seoul, south korea',
+                      '@seoul, south korea',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.black,
@@ -59,7 +89,7 @@ class _MainPageState extends State<MainPage> {
                     ),
                   ),
                   child: const Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: EdgeInsets.all(2.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
